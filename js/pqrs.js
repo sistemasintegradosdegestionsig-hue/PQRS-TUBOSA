@@ -10,6 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (!formulario) return;
 
     formulario.addEventListener("submit", async function (e) {
+        console.log("Entró al submit");
 
         e.preventDefault();
 
