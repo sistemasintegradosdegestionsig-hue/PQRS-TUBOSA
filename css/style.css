@@ -1,1 +1,231 @@
-/* Estilos principales del Sistema PQRS Tubosa */
+/*====================================================
+    SISTEMA PQRS TUBOSA
+====================================================*/
+
+:root{
+
+    --azul:#002060;
+    --azul-claro:#8DB4E2;
+    --verde:#92D050;
+    --amarillo:#FFD13F;
+    --rojo:#FF0000;
+
+    --gris:#f4f7fb;
+    --blanco:#ffffff;
+    --texto:#333333;
+
+}
+
+*{
+
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Segoe UI",Arial,sans-serif;
+
+}
+
+body{
+
+    background:var(--gris);
+
+}
+
+/*=============================================
+ENCABEZADO
+=============================================*/
+
+header{
+
+    background:var(--azul);
+    color:white;
+
+    padding:45px;
+
+    text-align:center;
+
+    box-shadow:0 4px 12px rgba(0,0,0,.2);
+
+}
+
+header h1{
+
+    font-size:42px;
+
+    font-weight:700;
+
+    letter-spacing:1px;
+
+}
+
+header p{
+
+    margin-top:10px;
+
+    font-size:18px;
+
+    color:var(--azul-claro);
+
+}
+
+/*=============================================
+CONTENIDO
+=============================================*/
+
+main{
+
+    display:flex;
+
+    justify-content:center;
+
+    padding:50px 20px;
+
+}
+
+.contenedor{
+
+    background:white;
+
+    width:100%;
+
+    max-width:700px;
+
+    border-radius:18px;
+
+    padding:45px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.12);
+
+}
+
+.contenedor h2{
+
+    color:var(--azul);
+
+    margin-bottom:15px;
+
+}
+
+.contenedor p{
+
+    color:#555;
+
+    line-height:1.7;
+
+    margin-bottom:35px;
+
+}
+
+/*=============================================
+BOTONES
+=============================================*/
+
+.botones{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+
+}
+
+.botones button{
+
+    border:none;
+
+    border-radius:12px;
+
+    padding:18px;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.30s;
+
+}
+
+/* Registrar */
+
+#btnNueva{
+
+    background:var(--azul);
+
+    color:white;
+
+}
+
+/* Consultar */
+
+#btnConsulta{
+
+    background:var(--azul-claro);
+
+    color:var(--azul);
+
+}
+
+/* Administrador */
+
+#btnLogin{
+
+    background:var(--verde);
+
+    color:#173600;
+
+}
+
+.botones button:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 8px 20px rgba(0,0,0,.18);
+
+}
+
+/*=============================================
+FOOTER
+=============================================*/
+
+footer{
+
+    margin-top:50px;
+
+    text-align:center;
+
+    padding:25px;
+
+    color:#666;
+
+    font-size:14px;
+
+}
+
+/*=============================================
+RESPONSIVE
+=============================================*/
+
+@media(max-width:768px){
+
+header h1{
+
+    font-size:32px;
+
+}
+
+.contenedor{
+
+    padding:30px;
+
+}
+
+.botones button{
+
+    font-size:16px;
+
+}
+
+}
