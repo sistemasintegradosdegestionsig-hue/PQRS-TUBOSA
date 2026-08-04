@@ -1,72 +1,28 @@
 <script>
 
-/* =====================================================
-   PQRS TUBOSA
-   Scripts Principales
-===================================================== */
+document.addEventListener("DOMContentLoaded",()=>{
 
-document.addEventListener("DOMContentLoaded", iniciarSistema);
+    document.getElementById("btnNueva")
+    .addEventListener("click",()=>{
 
-/**
- * Inicializa el sistema
- */
-function iniciarSistema(){
+        alert("Aquí irá el formulario público de PQRS");
 
-    console.log("Sistema PQRS iniciado");
+    });
 
-    registrarEventos();
+    document.getElementById("btnConsultar")
+    .addEventListener("click",()=>{
 
-}
+        alert("Aquí el cliente consultará su radicado");
 
-/**
- * Registra eventos de botones
- */
-function registrarEventos(){
+    });
 
-    const btnNueva = document.getElementById("btnNueva");
+    document.getElementById("btnLogin")
+    .addEventListener("click",()=>{
 
-    if(btnNueva){
+        alert("Aquí iniciará sesión el administrador");
 
-        btnNueva.addEventListener("click", abrirFormulario);
+    });
 
-    }
-
-}
-
-/**
- * Abrir formulario de PQRS
- */
-function abrirFormulario(){
-
-    alert("En la siguiente fase se abrirá el formulario de registro de PQRS.");
-
-}
-
-/**
- * Mostrar mensaje
- */
-function mostrarMensaje(mensaje){
-
-    alert(mensaje);
-
-}
-
-/**
- * Mostrar carga
- */
-function mostrarCarga(){
-
-    console.log("Cargando...");
-
-}
-
-/**
- * Ocultar carga
- */
-function ocultarCarga(){
-
-    console.log("Proceso terminado.");
-
-}
+});
 
 </script>
