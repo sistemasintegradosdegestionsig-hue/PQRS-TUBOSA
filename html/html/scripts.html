@@ -1,0 +1,58 @@
+<script>
+
+// =======================================================
+// SISTEMA PQRS TUBOSA
+// Scripts principales
+// =======================================================
+
+// Cuando la página termina de cargar
+document.addEventListener("DOMContentLoaded", () => {
+
+    console.log("Sistema PQRS iniciado");
+
+    iniciarEventos();
+
+});
+
+// Registrar todos los eventos
+function iniciarEventos(){
+
+    const btnNueva = document.getElementById("btnNueva");
+
+    if(btnNueva){
+
+        btnNueva.addEventListener("click", abrirFormulario);
+
+    }
+
+}
+
+// Abrir formulario de registro
+function abrirFormulario(){
+
+    alert("Próximamente se abrirá el formulario para registrar una PQRS.");
+
+}
+
+// Mostrar mensaje
+function mostrarMensaje(texto){
+
+    alert(texto);
+
+}
+
+// Mostrar cargando
+function mostrarCarga(){
+
+    console.log("Cargando...");
+
+}
+
+// Ocultar cargando
+function ocultarCarga(){
+
+    console.log("Carga finalizada");
+
+}
+
+</script>
