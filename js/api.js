@@ -36,3 +36,4 @@ async function guardarPQRS(datos) {
     }
 
 }
+Agregar api.js
