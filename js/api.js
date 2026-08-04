@@ -8,16 +8,12 @@ async function guardarPQRS(datos) {
 
     try {
 
-        const respuesta = await fetch(API_URL + "?action=guardarPQRS", {
-
+        const respuesta = await fetch(API_URL, {
             method: "POST",
-
             headers: {
                 "Content-Type": "application/json"
             },
-
             body: JSON.stringify(datos)
-
         });
 
         const resultado = await respuesta.json();
@@ -36,4 +32,3 @@ async function guardarPQRS(datos) {
     }
 
 }
-Agregar api.js
