@@ -1,13 +1,9 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-
 <meta charset="UTF-8">
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Nueva PQRS</title>
+<title>Registrar PQRS - Tubosa</title>
 
 <link rel="stylesheet" href="css/style.css">
 
@@ -17,27 +13,81 @@
 
 <header>
 
-<h1>Registrar Nueva PQRS</h1>
+<h1>Registro de PQRS</h1>
 
 <p>TUBOSA S.A.S.</p>
 
 </header>
 
-<main>
-
 <div class="contenedor">
 
-<h2>Registro de PQRS</h2>
+<h2>Nueva Solicitud</h2>
 
-<p>
+<form id="pqrsForm">
 
-En esta página los clientes podrán registrar una nueva Petición, Queja, Reclamo o Sugerencia.
+<label>Nombre completo *</label>
+<input type="text" id="nombre" required>
 
-</p>
+<label>Empresa</label>
+<input type="text" id="empresa">
+
+<label>Correo electrónico *</label>
+<input type="email" id="correo" required>
+
+<label>Teléfono *</label>
+<input type="text" id="telefono" required>
+
+<label>Ciudad</label>
+<input type="text" id="ciudad">
+
+<label>Número de factura</label>
+<input type="text" id="factura">
+
+<label>Producto</label>
+<input type="text" id="producto">
+
+<label>Tipo de PQRS *</label>
+
+<select id="tipo" required>
+
+<option value="">Seleccione...</option>
+
+<option>Petición</option>
+
+<option>Queja</option>
+
+<option>Reclamo</option>
+
+<option>Sugerencia</option>
+
+<option>Felicitación</option>
+
+</select>
+
+<label>Descripción *</label>
+
+<textarea id="descripcion" rows="6" required></textarea>
+
+<br><br>
+
+<button type="submit">
+
+Enviar PQRS
+
+</button>
+
+<button type="button"
+onclick="window.location.href='index.html'">
+
+Volver
+
+</button>
+
+</form>
 
 </div>
 
-</main>
+<script src="js/app.js"></script>
 
 </body>
 
