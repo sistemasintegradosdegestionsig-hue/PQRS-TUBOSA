@@ -1,18 +1,46 @@
-alert("pqrs.js cargó");
+// ============================================
+// REGISTRO DE PQRS
+// ============================================
 
-document.addEventListener("DOMContentLoaded", function () {
-
-    alert("DOM cargado");
+document.addEventListener("DOMContentLoaded", () => {
 
     const formulario = document.getElementById("pqrsForm");
 
-    alert(formulario);
+    if (!formulario) return;
 
-    formulario.addEventListener("submit", function (e) {
+    formulario.addEventListener("submit", async function (e) {
 
         e.preventDefault();
 
-        alert("El botón funciona");
+        const datos = {
+            nombre: document.getElementById("nombre").value,
+            empresa: document.getElementById("empresa").value,
+            correo: document.getElementById("correo").value,
+            telefono: document.getElementById("telefono").value,
+            ciudad: document.getElementById("ciudad").value,
+            factura: document.getElementById("factura").value,
+            producto: document.getElementById("producto").value,
+            tipo: document.getElementById("tipo").value,
+            descripcion: document.getElementById("descripcion").value
+        };
+
+        alert("Antes de enviar");
+
+        const respuesta = await guardarPQRS(datos);
+
+        alert("Después de enviar");
+
+        if (respuesta.ok) {
+
+            alert("Radicado: " + respuesta.radicado);
+
+            formulario.reset();
+
+        } else {
+
+            alert("Error: " + respuesta.mensaje);
+
+        }
 
     });
 
