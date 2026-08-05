@@ -11,18 +11,41 @@ document.addEventListener("DOMContentLoaded", () => {
     formulario.addEventListener("submit", async function (e) {
 
         e.preventDefault();
+const datos = {
 
-        const datos = {
-            nombre: document.getElementById("nombre").value,
-            empresa: document.getElementById("empresa").value,
-            correo: document.getElementById("correo").value,
-            telefono: document.getElementById("telefono").value,
-            ciudad: document.getElementById("ciudad").value,
-            factura: document.getElementById("factura").value,
-            producto: document.getElementById("producto").value,
-            tipo: document.getElementById("tipo").value,
-            descripcion: document.getElementById("descripcion").value
-        };
+    nombre: document.getElementById("nombre").value,
+
+    empresa: document.getElementById("empresa").value,
+
+    correo: document.getElementById("correo").value,
+
+    telefono: document.getElementById("telefono").value,
+
+    ciudad: document.getElementById("ciudad").value,
+
+    factura: document.getElementById("factura").value,
+
+    producto: document.getElementById("producto").value,
+
+    tipo: document.getElementById("tipo").value,
+
+    proceso: document.getElementById("proceso").value,
+
+    prioridad: document.getElementById("prioridad").value,
+
+    lote: document.getElementById("lote").value,
+
+    cantidad: document.getElementById("cantidad").value,
+
+    ciudadCaso: document.getElementById("ciudadCaso").value,
+
+    asunto: document.getElementById("asunto").value,
+
+    descripcion: document.getElementById("descripcion").value,
+
+    solucion: document.getElementById("solucion").value
+
+};
 
         alert("Antes de enviar");
 
