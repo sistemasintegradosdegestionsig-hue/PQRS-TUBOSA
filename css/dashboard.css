@@ -158,3 +158,88 @@
     box-shadow:0 5px 15px rgba(0,0,0,.08);
 
 }
+/* ==========================================
+   GRÁFICOS
+========================================== */
+
+.graficos{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:25px;
+
+    margin-top:35px;
+
+}
+
+.grafico{
+
+    background:white;
+
+    border-radius:12px;
+
+    padding:25px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+}
+
+.placeholder{
+
+    height:280px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:#f5f7fa;
+
+    border-radius:10px;
+
+    font-size:22px;
+
+    color:#777;
+
+}
+
+/* ==========================================
+   TABLA
+========================================== */
+
+.tabla{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    margin-top:20px;
+
+}
+
+.tabla th{
+
+    background:#002060;
+
+    color:white;
+
+    padding:14px;
+
+}
+
+.tabla td{
+
+    padding:14px;
+
+    border-bottom:1px solid #ddd;
+
+}
+
+.tabla tr:hover{
+
+    background:#f5f7fa;
+
+}
