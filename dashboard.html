@@ -1,1 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
 
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard | Sistema PQRS TUBOSA</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+
+</head>
+
+<body>
+
+<div class="layout">
+
+    <!-- SIDEBAR -->
+
+    <aside class="sidebar">
+
+        <div class="logo">
+
+            <h2>TUBOSA</h2>
+            <span>Sistema PQRS</span>
+
+        </div>
+
+        <nav>
+
+            <a href="dashboard.html" class="activo">🏠 Dashboard</a>
+
+            <a href="nueva-pqrs.html">📨 PQRS</a>
+
+            <a href="#">👥 Usuarios</a>
+
+            <a href="#">🏢 Procesos</a>
+
+            <a href="#">📊 Reportes</a>
+
+            <a href="#">🔍 Auditoría</a>
+
+            <a href="#">⚙ Configuración</a>
+
+            <a href="#">👤 Perfil</a>
+
+        </nav>
+
+    </aside>
+
+    <!-- CONTENIDO -->
+
+    <main class="contenido">
+
+        <header class="topbar">
+
+            <div>
+
+                <h1>Dashboard Ejecutivo</h1>
+
+                <p>Sistema Integral de PQRS</p>
+
+            </div>
+
+            <div class="usuario">
+
+                👤 Administrador
+
+            </div>
+
+        </header>
+
+        <!-- TARJETAS -->
+
+        <section class="cards">
+
+            <div class="card azul">
+                <h3>Total PQRS</h3>
+                <span id="total">0</span>
+            </div>
+
+            <div class="card verde">
+                <h3>Abiertas</h3>
+                <span id="abiertas">0</span>
+            </div>
+
+            <div class="card amarillo">
+                <h3>Pendientes</h3>
+                <span id="pendientes">0</span>
+            </div>
+
+            <div class="card rojo">
+                <h3>Cerradas</h3>
+                <span id="cerradas">0</span>
+            </div>
+
+        </section>
+
+        <!-- PANEL -->
+
+        <section class="panel">
+
+            <h2>Bienvenido al Sistema PQRS TUBOSA</h2>
+
+            <p>
+
+                Desde este panel podrás administrar las PQRS,
+                consultar indicadores, generar reportes y gestionar
+                todo el sistema.
+
+            </p>
+
+        </section>
+
+    </main>
+
+</div>
+
+<script src="js/dashboard.js"></script>
+
+</body>
+</html>
