@@ -243,3 +243,32 @@
     background:#f5f7fa;
 
 }
+/* ==========================================
+   BIENVENIDA
+========================================== */
+
+.bienvenida{
+
+    background:linear-gradient(135deg,#002060,#8DB4E2);
+
+    color:white;
+
+    padding:30px;
+
+    border-radius:12px;
+
+    margin-bottom:30px;
+
+}
+
+.bienvenida h2{
+
+    margin-bottom:10px;
+
+}
+
+.bienvenida p{
+
+    opacity:.95;
+
+}
