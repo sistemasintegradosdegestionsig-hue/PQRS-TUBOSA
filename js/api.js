@@ -9,11 +9,15 @@ async function guardarPQRS(datos) {
     try {
 
         const respuesta = await fetch(API_URL, {
+
             method: "POST",
+
             headers: {
                 "Content-Type": "application/json"
             },
+
             body: JSON.stringify(datos)
+
         });
 
         const resultado = await respuesta.json();
@@ -22,7 +26,7 @@ async function guardarPQRS(datos) {
 
     } catch (error) {
 
-        console.error(error);
+        console.error("Error:", error);
 
         return {
             ok: false,
